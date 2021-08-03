@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>URL CAPTURE App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
 
-</body>
+    <style>
+      .alert {
+        background: #ffbb00;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        margin: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <center>
+      <h3>URL CAPTURE APP</h3>
+      </center>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/application" method="POST">
+        <label for="weburl">Enter any HTTPS URL</label>
+        <input
+          type="text"
+          placeholder="eg : bbc.com"
+          class="u-full-width"
+          name="weburl"
+        />
+         <center>
+        <input onclick="alert('Copy of the captured data saved as .txt file')" type="submit" value="Capture Web Data" id="calc_btn" />
+           </center>
+        <br />
+
+      </form>
+
+    </div>
+
+  </body>
 </html>
