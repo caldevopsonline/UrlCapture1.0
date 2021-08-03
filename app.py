@@ -21,7 +21,10 @@ def url_capture():
         web_url = request.form['weburl']
 
         # Capture and Concatenate web address with HTTPS Prefix
-        url_capture = requests.get("https://www." + web_url + "/")
+        url_data = requests.get("https://www." + web_url + "/")
+
+        # Initialise data fetching process with the help of BeautifulSOup Library
+        fetch_data = BeautifulSoup(url_data.content, 'html.parser')
         return render_template()
 
 
