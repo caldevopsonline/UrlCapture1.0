@@ -28,12 +28,13 @@ def url_capture():
 
         # Begin data fetching process for website body section
         display = fetch_data.body.text
+
         # Save copy of the captured data to a txt file
         export_data = open("Data_FROM_URL.txt", "w")
         export_data.write(display)
         export_data.close()
 
-        # Return the fetch results to be displayed in a div
+        # Return thefetch results to be displayed in html div
         return render_template('app.html', display=display)
 
 
