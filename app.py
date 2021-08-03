@@ -13,9 +13,15 @@ def main():
     return render_template('app.html')
 
 
+# Initialise a connection for submitting data
 @app.route('/capture', methods=['POST'])
 def url_capture():
+    # Call form input field from app.html
     if request.method == 'POST':
+        web_url = request.form['weburl']
+
+        # Capture and Concatenate web address with HTTPS Prefix
+        url_capture = requests.get("https://www." + web_url + "/")
         return render_template()
 
 
