@@ -33,7 +33,7 @@ def url_capture():
         export_data.write(display)
         export_data.close()
 
-        # Return the fetch results to be displayed
+        # Return the fetch results to be displayed in a div
         return render_template('app.html', display=display)
 
 
