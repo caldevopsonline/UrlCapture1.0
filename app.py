@@ -25,6 +25,9 @@ def url_capture():
 
         # Initialise data fetching process with the help of BeautifulSOup Library
         fetch_data = BeautifulSoup(url_data.content, 'html.parser')
+
+        # Begin data fetching process for website body section
+        display = fetch_data.body.text
         return render_template()
 
 
