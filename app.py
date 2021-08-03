@@ -13,6 +13,12 @@ def main():
     return render_template('app.html')
 
 
+@app.route('/capture', methods=['POST'])
+def url_capture():
+    if request.method == 'POST':
+        return render_template()
+
+
 # Begin application running process
 if __name__ == '__main__':
     app.debug = True
