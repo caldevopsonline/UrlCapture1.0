@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
     />
-
+    <!-- CSS Script to style display section-->
     <style>
       .alert {
         background: #ffbb00;
@@ -29,17 +29,23 @@
 
     <!-- Form -->
     <div class="container">
-      <form action="/application" method="POST">
+      <!-- form to hold and submit user input with a post method -->
+      <form action="/capture" method="POST">
         <label for="weburl">Enter any HTTPS URL</label>
+
+        <!-- Input type set to text with a unique name set to weburl-->
         <input
           type="text"
           placeholder="eg : bbc.com"
           class="u-full-width"
           name="weburl"
         />
+
          <center>
+           <!-- button to capture data when triggered and prompt user on data been saved as txt file -->
         <input onclick="alert('Copy of the captured data saved as .txt file')" type="submit" value="Capture Web Data" id="calc_btn" />
            </center>
+
         <br />
 
       </form>
