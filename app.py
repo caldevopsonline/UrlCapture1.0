@@ -30,7 +30,7 @@ def url_capture():
         display = fetch_data.body.text
 
         # Save copy of the captured data to a txt file
-        export_data = open("Data_FROM_URL.txt", "w")
+        export_data = open("Captured_Data_FROM_URL.txt", "w")
         export_data.write(display)
         export_data.close()
 
