@@ -1,17 +1,16 @@
 # UrlCapture1.0
 
 # Overview
-This is a simple flask application that allows users to enter a url from HTML user interface and get a response that retrieves data from the web address. The the data captured is displayed to the user and a copy of the data is saved as txt file.The project has been deployed in localhost, Azure Devops and Amazon Beanstalk 
+This is a simple flask application that allows users to enter a url from HTML user interface and get a response that retrieves data from the web address. The the data captured is displayed to the user and a copy of the data is saved as txt file.The project has been deployed in localhost, Azure Devops and Amazon Beanstalk.
 
 # Demo Links
 1. Azure DeVops :    https://webscraper-app.azurewebsites.net
 2. Amazon Beanstalk: http://flaskupdate-env.eba-ki2hcsgk.us-east-1.elasticbeanstalk.com/
 # Installation
-
 Installing dependencies, run the following command 
->>pip install bs4
->>pip install requests
->>pip install flask
+1. pip install bs4
+2. pip install requests
+3. pip install flask
 
 # Running in Localhost
 flask command ===>> flask run
@@ -31,8 +30,14 @@ flask command ===>> flask run
  NB: It might sometimes take extra minutes to have your configuration fully functioning
  3. login into free tier account on azure devops and create a new project(https://dev.azure.com/)
  NB: Your portal account and azure devops dev.azure account much have same user credentials. This is to
- ensure that the resource group, subscription and web app canreflect in the pipline setup process
- 4. 
+ ensure that the resource group, subscription and web app can reflect in the pipline setup process
+ 4. Create a new pipeline
+ 5. select the project from azure repo or github repo.
+ 6. Configure the pipeline with the your subscription and web app name.
+ 7. Perform a build and deploy process.
+ 8. Test url link for web app to view project running on azure
+# Running Automated Test Suite
+The project contains a test script that test the function SEND() in app.py. The SENND() function is responsible for reading user input and capturing data from url using BeautifulSoup library and request. The test suit is made of a test_app.py and conftest.py. To run this, use the command--> pytest
 
 # Deploying Project to Amazon BeanStalk
  1. Rename app.py to application.py
@@ -42,5 +47,8 @@ flask command ===>> flask run
   requirement.txt
   templates
  3. On AMazon Web service, search for Elastic Beanstalk
- 4. 
+ 4. Create a bew Virtual environment
+ 5. Upload the zip file to the virtual environment to replace the default sample page.
+# Using Github Action for Continuous Integration
+This repo has a continuous integration enabled from the Actions panel. Each time a commit is made, a continous integration process is triggered to build the project and also provides an alert when a bug is found.
 
