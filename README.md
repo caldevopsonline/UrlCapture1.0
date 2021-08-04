@@ -1,15 +1,17 @@
 # UrlCapture1.0
 
 # Overview
+This is a simple flask application that allows users to enter a url from HTML user interface and get a response that retrieves data from the web address. The the data captured is displayed to the user and a copy of the data is saved as txt file.The project has been deployed in localhost, Azure Devops and Amazon Beanstalk 
 
-
-
+# Demo Links
+1. Azure DeVops :    https://webscraper-app.azurewebsites.net
+2. Amazon Beanstalk: Flaskupdate-env.eba-ki2hcsgk.us-east-1.elasticbeanstalk.com
 # Installation
 
 Installing dependencies, run the following command 
-pip install bs4
-pip install requests
-pip install flask
+>>pip install bs4
+>>pip install requests
+>>pip install flask
 
 # RUnning in Localhost
 flask command ===>> flask run
