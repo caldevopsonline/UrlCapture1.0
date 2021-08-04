@@ -5,7 +5,7 @@ This is a simple flask application that allows users to enter a url from HTML us
 
 # Demo Links
 1. Azure DeVops :    https://webscraper-app.azurewebsites.net
-2. Amazon Beanstalk: Flaskupdate-env.eba-ki2hcsgk.us-east-1.elasticbeanstalk.com
+2. Amazon Beanstalk: http://flaskupdate-env.eba-ki2hcsgk.us-east-1.elasticbeanstalk.com/
 # Installation
 
 Installing dependencies, run the following command 
