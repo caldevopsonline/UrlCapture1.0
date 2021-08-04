@@ -3,9 +3,12 @@
 # Overview
 This is a simple flask application that allows users to enter a url from HTML user interface and get a response that retrieves data from the web address. The the data captured is displayed to the user and a copy of the data is saved as txt file.The project has been deployed in localhost, Azure Devops and Amazon Beanstalk.
 
-# Demo Links
+# Project Links
 1. Azure DeVops :    https://webscraper-app.azurewebsites.net
 2. Amazon Beanstalk: http://flaskupdate-env.eba-ki2hcsgk.us-east-1.elasticbeanstalk.com/
+
+# Video Demo Links 
+ https://drive.google.com/file/d/10idWZspb1Keg0ql9Xk2KVFL-CXPx484a/view
 # Installation
 Installing dependencies, run the following command 
 1. pip install bs4
@@ -37,7 +40,7 @@ flask command ===>> flask run
  7. Perform a build and deploy process.
  8. Test url link for web app to view project running on azure
 # Running Automated Test Suite
-The project contains a test script that test the function SEND() in app.py. The SENND() function is responsible for reading user input and capturing data from url using BeautifulSoup library and request. The test suit is made of a test_app.py and conftest.py. To run this, use the command--> pytest
+The project contains a test script that test the function _URL_CAPTURE() in app.py. The SENND() function is responsible for reading user input and capturing data from url using BeautifulSoup library and request. The test suit is made of a test_app.py and conftest.py. To run this, use the command--> pytest
 
 # Deploying Project to Amazon BeanStalk
  1. Rename app.py to application.py
