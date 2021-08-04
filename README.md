@@ -52,3 +52,6 @@ The project contains a test script that test the function SEND() in app.py. The 
 # Using Github Action for Continuous Integration
 This repo has a continuous integration enabled from the Actions panel. Each time a commit is made, a continous integration process is triggered to build the project and also provides an alert when a bug is found.
 
+# Using a Post method and Request
+The flask application makes use python HTTP request library and  Post method. The post method is linked to the path '/capture' which captures the data from the input field and sends an HTTP get request to the intended URL. 
+
